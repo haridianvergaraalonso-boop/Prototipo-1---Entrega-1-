@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*---Este es el cuerpo---*/
+
+body {
+  font-family: "Lobster Two", cursive;
+  /* Degradado naranja como antes */
+  background: radial-gradient(circle at top left, #bb6226, #ccaa62);
+  color: #422207;
+  height: 100vh;
+  display: flex;
+  background-image: url("img/cutepomodoro.jpg");
+
+}
+
+/*---Este es el logo Nintenblog en el sidebar---*/
+.sidebar logo {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 30px;
+
+
+
+}
+
+/* --- Sidebar --- */
+.sidebar {
+  width: 240px;
+  background: rgba(197, 147, 105, 0.9);
+  display: block;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-right: 1px solid rgba(128, 36, 0, 0.973);
+  height: 100vh;
+  position: fixed;
+  
+}
+
+
+/* --- Elementos del sidebar (Menu) --- */
+.sidebar a {
+  background: 10px;
+  width: 90%;
+  align-items: center;
+  display: block;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 25px;
+  text-decoration: none;
+  color: #422207;
+  
+}
+
+/* --- Contenido de dentro (bloque del js aparte)--- */
+.main-content2 {
+  margin-left: 240px;
+  /* deja espacio para el sidebar */
+  width: calc(100% - 240px);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* centra horizontalmente */
+  align-items: center;
+  /* centra verticalmente */
+  flex-direction: column;
+  text-align: center;
+}
+
+/* --- Bloque de titulo --- */
+.toptitlebar {
+  border: 2px solid #e58f4b;
+  border-radius: 12px;
+  padding: 20px 40px;
+  text-align:start;
+  width: fit-content;
+  background: rgba(211, 154, 79, 0.521);
+  position:absolute;
+  top: 0px;
+
+
+}
+
+
+/* --- Letras del bloque de titulo --- */
+.toptitlebar h1 {
+  font-family: "Lobster Two", cursive;
+  color: #5c240a;
+  font-size: 2rem;
+  margin: 0;
+}
+
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  background-image: url("img/autum.jpg");
+  padding: 30px 50px;
+  border-radius: 20px;
+  border: 3px solid #8b4513;
+  box-shadow: 0 0 20px rgb(253, 101, 0);
+}
+
+/* Titulo task + break (POR FIN FUNCIONAAA) */
+#taskName {
+  font-size: 3rem;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+/* timer grandito para que se vea bien */
+#value {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #5f270d;
+  padding: 10px 20px;
+  background: rgb(214, 192, 163);
+  border-radius: 10px;
+  border: 2px solid #80461d;
+}
+
+@media (max-width: 767px) {}
+@media (min-width: 768px) and (max-width: 999px){}
+@media (min-width: 991px) {}

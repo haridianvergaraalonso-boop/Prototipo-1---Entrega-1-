@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lobster Two", cursive;
+    /* Degradado naranja como antes */
+    background: radial-gradient(circle at top left, #bb6226, #ccaa62);
+    color: #422207;
+    height: 100vh;
+    display: flex;
+}
+
+/* --- SIDEBAR --- */
+.sidebar {
+    width: 240px;
+    background: rgba(155, 70, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    border-right: 1px solid rgba(0, 255, 234, 0.973);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+.main-content2 {
+    margin-left: 240px;
+    /* deja espacio para el sidebar */
+    width: calc(100% - 240px);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* centra horizontalmente */
+    align-items: center;
+    /* centra verticalmente */
+    flex-direction: column;
+    text-align: center;
+}
+
+/* --- BLOQUE DEL TÍTULO --- */
+.toptitlebar {
+    border: 2px solid #e58f4b;
+    border-radius: 12px;
+    padding: 20px 40px;
+    text-align: center;
+    width: fit-content;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.2);
+    /* <-- aumenta visibilidad */
+    backdrop-filter: blur(2px);
+    /* opcional: da efecto de vidrio */
+}
+
+.toptitlebar h1 {
+    font-family: "Lobster Two", cursive;
+    color: #5c240a;
+    font-size: 2rem;
+    margin: 0;
+}
